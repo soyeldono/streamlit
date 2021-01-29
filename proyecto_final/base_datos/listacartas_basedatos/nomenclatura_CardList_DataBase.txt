@@ -1,0 +1,111 @@
+En este documento de texto se describe cada columna del archivo "CardList_DataBase.csv". Mas sin embargo hay unos poco comabios como los siguientes:
+
+La fecha que esté escrita usa la forma (dia/mes/año)
+
+Los contadores seran nombrados como 1ro,2do,3ro,4to,5to,...
+
+Las cartas con multiples efectos que estan escritos de la forma: ●Descarta..., se representaran con un '-', ejemplo:
+	De ser: ●[Efecto 1]... final del efecto 1. ●[Efecto 2]... final del efecto 2. ●[Efecto 3]... final del efecto 3. etc...
+	Pasa a ser: -[Efecto 1]... final del efecto 1. -[Efecto 2]... final del efecto 2. -[Efecto 3]... final del efecto 3. etc...
+
+
+
+
+
+
+
+
+
+Tipo de Carta: Los 3 tipos de cartas que hay ([str],int)
+	Monstruo: 0
+	Magia: 1
+	Trampa: 2
+
+Nombre de Carta: Nombre de cada carta, (str)
+
+Texto de la Carta: Texto que tiene cada carta (str)
+	Si hay texto: descripcion de la carta
+	Si es '#': Es un monstruo NORMAL y no importa el texto de este
+
+Tipo de Magia: Los 5 tipos de cartas magicas que hay ([str],int)
+	Magia Normal: 0
+	Magia de Juego Rapido: 1
+	Magia Continua: 2
+	Magia de Campo: 3
+	Magia de Ritual: 4
+	Si es '#' o -1: La carta no es de magia
+
+Tipo de Trampa: Los 3 tipos de cartas trampa que hay ([str],int)
+	Trampa Normal: 0
+	Trampa Continua: 1
+	Trampa de Contra Efecto: 2
+	Si es '#' o -1: La carta no es de trampa
+
+Tipo de Monstruo: Los 24 Tipos de monstruo que hay a la fecha de creacion de este Data Set [01/12/2020] ([str],int). Si el monstruo corresponde a Ritual,Volteo,
+		  Toon,Spirit,Geminis. Estos aparte de su Tipo de Monstruo llevaran una diagonal '/' para especificar si corresponden a alguno de los ya mencionados.
+		  ejemplo: Guerrero/VOLTEO, indicando que el monstruo aparte de ser guerrero tambien corresponde a los monstruos de 'VOLTEO'. Lo mismo con los del
+		  extra deck.
+	Aqua: 0
+	Bestia: 1
+	Bestia Alada: 2
+	Ciberso: 3
+	Demonio: 4
+	Dinosaurio: 5
+	Dragon: 6
+	Guerrero: 7
+	Guerrero-Bestia: 8
+	Hada: 9
+	Insecto: 10
+	Lanzador de Conjuros: 11
+	Maquina: 12
+	Pez: 13
+	Planta: 14
+	Psiquico: 15
+	Piro: 16
+	Reptil: 17
+	Roca: 18
+	Serpiente Marina: 19
+	Trueno: 20
+	Wyrm: 21
+	Zombi: 22
+	Bestia Divina: 23
+	Si es '#' o -1: La carta no es un monstruo
+
+Atributo: Atributo del Monstruo ([str],int)
+	Agua: 0
+	Fuego: 1
+	Luz: 2
+	Oscuridad: 3
+	Tierra: 4
+	Viento: 5
+	Divinidad: 6
+	Si es '#' o -1: La carta no es un monstruo
+
+Nivel/Rango/Escala/Enlace: Nivel/Rango/Escala/Enlace de cada monstruo (int)
+	Si es -1: La carta no es un monstruo
+
+ATK: Ataque de cada monstruo (int)
+	Si es -1: La carta no es un monstruo o su ataque es '?'
+
+DEF: Defensa de cada monstruo (int)
+	Si es -1: La carta no es un monstruo o su defensa es '?' 
+
+Fecha de Publicacion de la Carta: Fecha aproximada de publicacion de la carta por primera vez o la mas antigua que encontre (Date)
+
+Rareza: Rareza de la carta (str)
+
+Metodo de Obtencion: La o las formas de obtener la carta ([str],int), *no se cuenta el ticket de ensueño UR/SR*
+	Caja Grande: 0
+	Caja Mini: 1
+	Estructura: 2 (sea EX o no)
+	Selection Box Grande: 3
+	Selection Box Mini: 4
+	Gratis: 5
+		Gratis quiere decir conseguir las cartas por los siguientes metodos
+		- Duelo contra un personaje/npc
+		- Deck inicial
+		- Subir de nivel un personaje
+		- Ticket
+		- Evento
+		- Celebraciones
+		- Cambia cartas
