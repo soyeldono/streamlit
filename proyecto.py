@@ -1105,7 +1105,7 @@ elif choise == "YuGi-Oh Duel Links":
         por sincronía deben estar boca arriba para ser utilizados como material. Los textos que tengan cosas como '2+' quiere decir
         '2 o más'. Estas cartas van en el Extra Deck. \n Ejemplo de invocación por sincronía: """)
 
-    sc_sm = open("./imagenes_videos/sincro_invocacion.gif","rb")
+    sc_sm = open("./imagenes_videos/Sincro_invocacion.gif","rb")
     cont_sc = sc_sm.read()
     url_sc = base64.b64encode(cont_sc).decode("utf-8")
     sc_sm.close()
