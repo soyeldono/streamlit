@@ -1,0 +1,15 @@
+- Nombre del Deck: Nombre por el cual se busca o se le conoce en la comunidad al deck (str)
+
+- Carta: Cartas que juega el deck (str)
+
+   Este apartado está separado los tipos de carta, primero estan los monstruos del Main Deck
+   luego las magias, después las trampas y al final los monstruos del Extra Deck. No hay 
+   Side Deck.
+
+- Tier: Su posición en el meta (int)
+
+- Habilidad: La o las habilidades que comunmente se usa en el deck (str)
+
+- Fecha: La fecha aproximada donde el deck tuvo su impacto (date formato dia/mes/año)
+
+- Cartas con Banlist: Muestra todas las cartas que tiene en la banlist en esa fecha (str)
